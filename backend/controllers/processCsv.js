@@ -11,7 +11,7 @@ import { deleteBullResources } from "../services/deleteBullResources.js";
 import validateCsv from "../services/validateCsv.js";
 
 const JOB_NAME = "processing-images";
-export const DOMAIN = "http://localhost:5000";
+export const DOMAIN = "https://image-compressor-ty3v.onrender.com";
 
 const processCsv = async (req, res, next) => {
   try {

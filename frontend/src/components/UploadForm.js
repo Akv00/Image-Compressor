@@ -15,7 +15,7 @@ function UploadForm() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/uploadfile",
+        "https://image-compressor-ty3v.onrender.com/api/uploadfile",
         formData,
         {
           headers: {

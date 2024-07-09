@@ -50,7 +50,8 @@ The system processes image data from CSV files, validates the data, compresses i
    - Manages task queues for asynchronous processing.
 
 ## Visual Diagram
-![System Design Diagram](https://drive.google.com/file/d/1YwZVlzpcMGTiwD-bUorn1Xpbggn_DdlU/view?usp=sharing)
+![Image_Compressor drawio](https://github.com/Akv00/Image-Compressor/assets/40006188/26b75a13-809b-4fdd-b223-9fa244d3539d)
+
 
 ## Component Descriptions
 

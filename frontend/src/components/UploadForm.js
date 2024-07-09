@@ -28,6 +28,13 @@ function UploadForm() {
       console.error("Error uploading file:", error);
     }
   };
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(requestId).then(() => {
+      alert('Request ID copied to clipboard');
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  };
 
   return (
     <div className="mb-8">
@@ -49,7 +56,17 @@ function UploadForm() {
         Upload
       </button>
       {requestId && (
-        <p className="mt-4 font-bold text-2xl font-mono text-white border-red-200 border-4 px-2 py-2 bg-black">Request ID: {requestId}</p>
+        <div className="relative">
+        <p className="text-white mt-5 text-2xl bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2">
+          Request ID: {requestId}
+        </p>
+        <button
+          onClick={handleCopyClick}
+          className="absolute right-5 top-1/2 transform -translate-y-1/2 text-sm bg-blue-500 hover:bg-blue-700 text-white font-semibold py-1 px-2 rounded"
+        >
+          Copy
+        </button>
+      </div>
       )}
     </div>
   );

@@ -1,5 +1,12 @@
 # Image Processing System
 
+
+## GitHub Repository
+Repository: [Image-Compressor](https://github.com/Akv00/Image-Compressor)
+## Postman Collection
+Collection Link: [Postman Collection](https://documenter.getpostman.com/view/33758793/2sA3e2gVJY)
+
+
 ## Overview
 The system processes image data from CSV files, validates the data, compresses images asynchronously, stores the processed images in the database, and provides APIs for file submission, status checking and also to download the input and output files. It uses AWS for file storage, PostgreSQL for the database, and BullMQ and  Redis for the message queue.
 
@@ -101,3 +108,6 @@ create table csv_data_table (
 	no_of_images int NOT NULL CHECK (no_of_images > 0),
 	processing_percentage int NOT NULL DEFAULT 0 CHECK (processing_percentage >= 0 and processing_percentage <= 100)
 );
+
+
+

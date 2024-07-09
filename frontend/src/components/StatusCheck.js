@@ -11,7 +11,7 @@ function StatusCheck() {
 
   const checkStatus = async () => {
     try {
-      const response = await axios.get(`https://image-compressor-ty3v.onrender.com/api/status/${requestId}`);
+      const response = await axios.get(`http://16.170.255.226:5000/api/status/${requestId}`);
       setStatus(response.data.status);
       console.log(response.data);
     } catch (error) {

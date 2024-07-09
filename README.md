@@ -50,7 +50,7 @@ The system processes image data from CSV files, validates the data, compresses i
    - Manages task queues for asynchronous processing.
 
 ## Visual Diagram
-![System Design Diagram]([https://drive.google.com/file/d/1YwZVlzpcMGTiwD-bUorn1Xpbggn_DdlU/view?usp=sharing])
+![System Design Diagram](https://drive.google.com/file/d/1YwZVlzpcMGTiwD-bUorn1Xpbggn_DdlU/view?usp=sharing)
 
 ## Component Descriptions
 

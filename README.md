@@ -99,7 +99,6 @@ The system processes image data from CSV files, validates the data, compresses i
 -- Table: Products
 create type status_enum as ENUM('created','processing','completed');
 
-drop table csv_data_table;
 create table csv_data_table (
 	id UUID PRIMARY KEY NOT NULL DEFAULT gen_random_uuid(),
 	csv_path text NOT NULL,
